@@ -15,8 +15,7 @@ pipeline {
         }
         stage("Run image") {
             steps {
-                sh 'docker stop cont1'
-                sh 'docker rm cont1'
+             
                 sh 'docker run -dit -p 80:80 --name cont1 nginx '
                 sh "docker ps"
                 
