@@ -1,3 +1,3 @@
 def call {
-	echo "Hello"
+	sh 'echo Hello Swapna'
 }
